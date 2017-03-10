@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
 
 <head>
-    <title>Kalender</title>
-    <link rel="stylesheet" href="main.css" type="text/css" />
+    <title>Verjaardagskalender</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1>Kalender</h1>
-    <div class="months">
-        <!-- START BLOCK : calender -->
-        <h2>{Birthday_ID}</h2></br>
-        <!-- END BLOCK : calender -->
-    </div>
-    <div class="birthdays">
-        <!-- START BLOCK : calender_birthdays -->
-        <p>{Firstname} {Lastname} {Age}</p>
-        <!-- END BLOCK : calender_birthdays -->
-    </div>
+    <!-- START BLOCK : birthdays -->
+    <h1>{month}</h1>
+    <h2>{day}</h2>
+    <p>
+        <a href="edit.php?id={id}">
+               {person} {year}</a>
+
+        <a href="delete.php?id={id} ">x</a>
+    </p>
+    <!-- END BLOCK : birthdays -->
+    <p><a href="create.php">+ Toevoegen</a></p>
 
 </body>
 
