@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <title>Verjaardagskalender</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<html>
+
+<body>
+    <form action="update.php" method="post">
+        <!-- START BLOCK : birthdays -->
+        <input type="hidden" name="id" value="{id}">
+        <br>
+        <label for="person">Title:</label>
+        <br>
+        <input name="person" value="{person}">
+        <br>
+        <label for="day">Author:</label>
+        <br>
+        <input name="day" value="{day}">
+        <br>
+        <label for="month">month:</label>
+        <br>
+        <input name="month" value="{month}">
+        <br>
+        <label for="year">year:</label>
+        <br>
+        <input name="year" value="{year}">
+        <br>
+        <!-- END BLOCK : birthdays -->
+        <input type="submit" name="submit" value="save">
+    </form>
+</body>
+
+</html>
